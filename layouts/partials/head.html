@@ -35,7 +35,21 @@
 {{- if site.Params.analytics.naver.SiteVerificationTag }}
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
+
+<!-- Analytics tags -->
 <script async src="http://s500.home.lan:3080/script.js" data-website-id="04180ca0-a17a-4d9c-b0f7-4ac2bd6bc59c"></script>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "573d96fb3c314982bd436abfc13cd1e7"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X21WYXYPZ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X21WYXYPZ4');
+</script>
 
 {{- /* Styles */}}
 
